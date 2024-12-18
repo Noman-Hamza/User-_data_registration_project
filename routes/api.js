@@ -8,8 +8,8 @@ import {DeleteSingleUser} from "../app/controllers/UsersController.js";
 
 ///users
 
-router.post("/Registration", UserController.Registration);
-router.post("/Login", UserController.Login);
+router.post("/Registration",UserController.Registration);
+router.post("/Login",UserController.Login);
 router.get("/ProfileRead",AuthMiddleware,UserController.ReadSingleProfile);
 router.get("/AllUserProfileRead",UserController.AllUserProfileRead);
 router.post("/ProfileUpdate",AuthMiddleware,UserController.ProfileUpdate);
